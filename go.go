@@ -107,6 +107,7 @@ func GoCrossCompile(opts *CompileOpts) error {
 		args = append(args, "-a")
 	}
 	args = append(args,
+		"-i",
 		"-gcflags", opts.Gcflags,
 		"-ldflags", opts.Ldflags,
 		"-tags", opts.Tags,
